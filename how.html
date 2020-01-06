@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="my_style.css">
+		<h1><center>Model By You</center></h1>
+		<center><h4>Confidence is key</h4></center>
+		<title> Model By You </title>
+		
+		<!clicky pics>
+		<script>
+			var myImages = new Array("model1.png", "model2.png", "coupleModel.png")
+			var newPic = 0
+			
+			function chngImg()
+			{
+				newPic++
+				
+				if(newPic > 2)
+				{
+					newPic = 0
+				}
+				
+				document.beforepic.src=myImages[newPic]
+				return false
+			}
+			
+			//clicky picks after
+			var myImages2 = new Array("diverseModels.png", "athleticModelp.png", "Modelp.png")
+			var newPic2 = 0
+			
+			function chngImg2()
+			{
+				newPic2++
+				
+				if(newPic2 > 2)
+				{
+					newPic2 = 0
+				}
+				
+				document.afterpic.src=myImages2[newPic2]
+				return false
+			}
+		</script>
+	</head>
+
+	<body link= 00004d vlink= purple>
+		<!navigation bar>
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="what.html">What?</a></li>
+				<li style="float:right"><a href="how.html" class="active">How?</a></li>
+				<li><a href="contact.html">Contact Us!</a></li>
+				<li><a href="sources.html">Sources</a></li>
+			</ul>
+		</nav>
+		
+		<h2>How Do We Work?</h2>
+		<br>
+		<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+			<div class="" style="max-width: 30%; max-height: 30%;">
+				<br><br><br><br>
+				<img src ="takePicture.png" alt="Camera" title="Photoshoot">
+			</div>
+			<div class="" style="max-width: 30%; max-height: 30%;">
+			<img src ="mirrorModel.png" alt="Model" title="Model in the Mirror">
+			</div>
+		</div>
+		
+		<p> <br>
+			1. Download the ModelByYou web extension.<br>
+			2. Create an account and enter your body measurements.<br>
+			3. Choose to either upload your own images or opt to
+				have your laptop take a live picture.<br>
+			4. Activate ModelByYou.<br>
+			5. Admire your stunning self on participating websites.<br> <br>
+			The following companies support the ModelByYou extension:
+		</p>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/torrid/">
+			Torrid </a> <br>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rue21/">
+			rue21 </a> <br>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/AmericanEagle/">
+			American Eagle </a> <br>
+			<br><br><br>
+			
+		<!cycles of before and after>
+		<a style="padding:0 200px;float:left;" href = "" onclick = "return chngImg()">
+			<img name = "beforepic" src = "model1.png" border = 0 height = 250 alt="Model" title="Model 1">
+		</a>
+		<a style="padding:0 200px;float:right;" href = "" onclick = "return chngImg2()">
+			<img name = "afterpic" src = "diverseModels.png" border = 0 height = 250 alt="models" title="Diverse Models">
+		</a>
+		<b>
+			<p style="padding:0 280px;float:left">Before</p>
+			<p style="padding:0 300px;float:right">After</p>
+		</b>
+	</body>
+</html>
+
+
